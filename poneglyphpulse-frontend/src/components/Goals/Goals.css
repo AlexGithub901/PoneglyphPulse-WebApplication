@@ -1,0 +1,300 @@
+.goals-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.goals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.goals-header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.create-btn {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.create-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(79, 172, 254, 0.4);
+}
+
+.create-goal-form {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.create-goal-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.create-goal-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-goal-form input,
+.create-goal-form textarea,
+.create-goal-form select {
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.create-goal-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.filter-tabs button {
+  padding: 10px 25px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-tabs button.active {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  border-color: transparent;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.goal-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+}
+
+.goal-card.completed {
+  opacity: 0.8;
+  border: 2px solid #4caf50;
+}
+
+.goal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.goal-header h3 {
+  color: #333;
+  font-size: 1.3rem;
+  flex: 1;
+}
+
+.difficulty-badge {
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.goal-description {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.goal-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.category, .frequency {
+  background: #f0f0f0;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.progress-section {
+  margin: 20px 0;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.goal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.edit-mode {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.edit-mode input {
+  flex: 1;
+  padding: 8px;
+  border: 2px solid #4facfe;
+  border-radius: 6px;
+}
+
+.update-btn {
+  flex: 1;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.delete-btn, .save-btn, .cancel-btn {
+  background: #f5f5f5;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #ffebee;
+}
+
+.save-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.cancel-btn {
+  background: #f44336;
+  color: white;
+}
+
+.completed-badge {
+  text-align: center;
+  padding: 15px;
+  background: #e8f5e9;
+  color: #4caf50;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.goal-rewards {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  border-top: 2px dashed #e0e0e0;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .goals-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,195 @@
+.trade-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.trade-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.trade-header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.create-trade-btn {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.create-trade-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(67, 233, 123, 0.4);
+}
+
+.trades-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.trades-container h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.trade-card {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border-left: 5px solid;
+}
+
+.trade-card.status-pending {
+  border-left-color: #ff9800;
+}
+
+.trade-card.status-accepted,
+.trade-card.status-completed {
+  border-left-color: #4caf50;
+}
+
+.trade-card.status-rejected,
+.trade-card.status-cancelled {
+  border-left-color: #f44336;
+}
+
+.trade-info {
+  margin-bottom: 20px;
+}
+
+.trade-parties {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.party {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.party strong {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.role {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #43e97b;
+}
+
+.trade-status {
+  text-align: center;
+  color: #666;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.status-pending .status-badge {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-accepted .status-badge,
+.status-completed .status-badge {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-rejected .status-badge,
+.status-cancelled .status-badge {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.trade-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.accept-btn, .reject-btn, .cancel-btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.accept-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.accept-btn:hover {
+  background: #45a049;
+}
+
+.reject-btn {
+  background: #f44336;
+  color: white;
+}
+
+.reject-btn:hover {
+  background: #da190b;
+}
+
+.cancel-btn {
+  background: #9e9e9e;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #757575;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.create-trade-form {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.create-trade-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
